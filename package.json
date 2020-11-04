@@ -1,5 +1,5 @@
 {
-  "name": "vue",
+  "name": "vue2-prac",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -45,9 +45,8 @@
     "not ie <= 8"
   ],
   "keywords": [
-    "vue",
-    "vuejs",
-    "starter"
+    "vue2",
+    "vue"
   ],
-  "description": "Vue.js example starter project"
+  "description": ""
 }
