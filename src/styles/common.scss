@@ -1,0 +1,29 @@
+@mixin lineclamp($value: 1) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $value;
+}
+
+@mixin flexiable(
+  $row: initial,
+  $column: initial,
+  $direction: initial,
+  $flex: initial
+) {
+  display: flex;
+  @if $row != initial {
+    justify-content: $row;
+  }
+  @if $column != initial {
+    align-items: $column;
+  }
+  @if $direction != initial {
+    flex-direction: $direction;
+  }
+  @if $flex != initial {
+    flex: $flex;
+  }
+}

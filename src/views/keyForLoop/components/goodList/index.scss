@@ -1,0 +1,42 @@
+.good-list {
+  width: 100%;
+  background-color: #FFFFFF;
+  .list-good {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 10px;
+    @include flexiable(space-between);
+    .good-left {
+      width: 120px;
+      height: 120px;
+      .left-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .good-right {
+      padding: 10px;
+      @include flexiable(space-between, start, column, 1);
+      .right-top {
+        .top-txt {
+          @include lineclamp(2);
+          font-weight: bold;
+        }
+      }
+      .right-bottom {
+        width: 100%;
+        @include flexiable(space-between, center);
+        .bottom-price {
+           color: red;
+           font-size: 18px;
+        }
+      }
+    }
+  }
+  .list-loading {
+    font-size: 14px;
+    margin: 20px auto;
+  }
+} 
